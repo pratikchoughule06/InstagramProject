@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+      <listeners>
+         <listener class-name="extendReport.ExtentTestNGIReporterListener"/>
+      </listeners>
+  <test thread-count="5" name="InstagramTest">
+   <parameter name= "browser" value="chrome"/>
+    <classes>
+      <class name="com.instagram.testCases.TC_LoginTest_1234"/>
+     <!--<class name="com.instagram.testCases.TC_LoginTestDDT_1233"/>-->
+      <!--<class name="com.instagram.testCases.BaseClass"/>-->
+      <!--<class name="com.instagram.testCases.TC_EditProfile_1235"/>-->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
